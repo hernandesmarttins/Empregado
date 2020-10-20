@@ -24,6 +24,7 @@ public class Main {
         System.out.println();
         System.out.println("qual a porcentagem para o aumento de salario?");
        //double porcentagem = input.nextDouble();
+      //  empregado.aumentoSalarial(10);
         empregado.aumentoSalarial(input.nextDouble());
         System.out.println();
         System.out.println("dados atualizados: " + empregado);

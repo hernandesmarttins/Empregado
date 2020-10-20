@@ -39,14 +39,14 @@ public class Empregado {
         return salarioBruto - imposto;
     }
 
-    public void aumentoSalarial(float tax){
+    public void aumentoSalarial(double tax){
         salarioBruto += salarioBruto * tax /100.0;
     }
 
     @Override
     public String toString() {
         return "nome: " + getNome() +
-                ", $" + String.format("%.2f",);
+                ", $" + String.format("%.2f", salarioLiquido());
     }
-   // return name + ", $ " + String.format("%.2f", netSalary());
+    /* return name + ", $ " + String.format("%.2f", netSalary()); */
 }

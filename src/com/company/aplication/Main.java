@@ -19,10 +19,14 @@ public class Main {
 
         Empregado empregado = new Empregado(nome,salarioBruto,imposto);
 
-        System.out.println("atualização decorrente");
-        System.out.println("Empregado: " + nome + "$" + salarioBruto);
-        empregado.setImposto(0.10);
-
+        System.out.println();
+        System.out.println("Empregado" + empregado);
+        System.out.println();
+        System.out.println("qual a porcentagem para o aumento de salario?");
+       //double porcentagem = input.nextDouble();
+        empregado.aumentoSalarial(input.nextDouble());
+        System.out.println();
+        System.out.println("dados atualizados: " + empregado);
 
         input.close();
     }
